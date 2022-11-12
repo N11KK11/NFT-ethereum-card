@@ -1,0 +1,155 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+:root {
+   --very-dark-bg: hsl(217, 54%, 11%);
+   --dark-card-bg: hsl(216, 50%, 16%);
+   --dark-line : hsl(215, 32%, 27%);
+   --white: hsl(0, 0%, 100%);
+   --text: #667a94;
+}
+
+
+/* Structural */
+
+body {
+    background-color: var(--very-dark-bg);
+    font-family: 'Outfit', sans-serif;
+    color: white;
+}
+
+
+
+.card {
+    max-width: 368px;
+    height: 80vh;
+    background-color: var(--dark-card-bg);
+    border-radius: 14px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+
+hr {
+    color: var(--dark-line);
+    width: 100%;
+}
+
+
+/* Image edits */
+
+.img-cnt {
+    background-color: aqua;
+    overflow: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.img-cnt:hover img {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.img-obj-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+
+.creator-pic {
+    height: 38px;
+    border: solid 1px white;
+    border-radius: 50%;
+    margin-right: 14px;
+}
+
+
+
+/*Typography*/
+
+h1 {
+    font-weight: 600;
+}
+
+h1:hover {
+    color: aqua;
+    cursor: pointer;
+}
+p {
+    font-size: 1.125rem;
+    color: var(--text);
+    margin-top: 12px;
+     margin-bottom: 12px;
+   
+}
+
+.details {
+    color: aqua;
+    margin-top: 12px;
+
+}
+
+.diamond {
+ 
+}
+
+.details span {
+    color: var(--text);
+    margin-left: 94px;
+}
+
+
+.creator {
+    display: flex;
+    justify-content: flex-start;
+    align-items: 
+    
+
+}
+
+.creator span {
+    color: white;
+    margin-left: 6px;
+ 
+}
+
+.creator span:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+
+/*Responsive */
+
+@media only screen and (max-width: 768px) {
+    .card {
+    
+    }
+    .details span {
+    margin-left: 4px;
+  
+}
+}
